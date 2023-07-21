@@ -2,18 +2,144 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <title>Vite App</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-
-    <%- include('./layout/footer'); -%>
-
-    <script type="module" src="../main.js"></script>
+    <header class="header">
+      <div class="header__container">
+        <ul class="navbar">
+          <li class="navbar__item"><a href="" class="navbar__link">WILLIAM LEE</a></li>
+          <li class="navbar__item"><a href="" class="navbar__link">BASED IN TAIWAN</a></li>
+          <li class="navbar__item"><a href="" class="navbar__link">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</a></li>
+          <li class="navbar__item"><a href="" class="navbar__link">CONTACT ME</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="banner">
+        <div class="banner__container">
+          <div class="banner__left">
+            <div class="profile-img-box"><img src="/src/assets/images/banner.png" alt="banner" class="profile-img"></div>
+          </div>
+          <div class="banner__right">
+            <h2 class="section-title">Hi<br>I’m a front-end<br>developer</h2>
+            <h1 class="banner-name">William</h1>
+            <button class="btn ml-auto">
+              <span>contact me&nbsp;</span>
+              <img class="btn__icon" src="/src/assets/icons/arrow_outward.svg" alt="arrow-outward">
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="introduction">
+        <div class="introduction__container">
+          <div class="introduction__left">
+            <div class="introduction-info">
+              <h2 class="section-title">Introduction</h2>
+              <p class="introduction-desc">Hi, I'm William Lee, a Front-End<br>Developer with a passion for<br>building beautiful and responsive<br>websites that provide an optimal<br>user experience.</p>
+              <div class="sparkle-container">
+                <img src="/src/assets/images/sparkle-sm.png" alt="sparkle" class="">
+              </div>
+            </div>
+          </div>
+          <div class="introduction__right">
+            <div class="album">
+              <div class="div photo-box"><img src="/src/assets/images/sparkle.png" alt="photo-1"></div>
+              <div class="div photo-box"><img src="/src/assets/images/photographer.png" alt="photo-2"></div>
+              <div class="div photo-box"><img src="/src/assets/images/photographer-2.png" alt="photo-3"></div>
+            </div>  
+          </div>
+        </div>
+      </section>
+      <section class="about-me">
+        <div class="about-me__container">
+          <div class="about-me__left">
+            <div class="coordinate">
+              <div class="coordinate__quandrant">
+                <div class="coordinate__number">Q1</div>
+                <p class="coordinate__title">Attention to Detail</p>
+                <p class="coordinate__text">Meticulous code analysis and optimization.</p>
+              </div>
+              <div class="coordinate__quandrant">
+                <div class="coordinate__number">Q2</div>
+                <p class="coordinate__title">Adaptability</p>
+                <p class="coordinate__text">Swift learning of new technologies.</p>
+              </div>
+              <div class="coordinate__quandrant">
+                <div class="coordinate__number">Q3</div>
+                <p class="coordinate__title">Problem Solver</p>
+                <p class="coordinate__text">Identifying and resolving issues.</p>
+              </div>
+              <div class="coordinate__quandrant">
+                <div class="coordinate__number">Q4</div>
+                <p class="coordinate__title">Team Player</p>
+                <p class="coordinate__text">Collaborates and shares ideas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-me__right">
+            <div class="about-me-intro">
+              <h2 class="about-me-title">About Me</h2>
+              <p class="about-me-desc">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact__container">
+          <div class="contact__left">
+            <h2 class="section-title contact-title">CONTACT ME<img src="/src/assets/icons/arrow-right.png" alt="right arrow"></h2>
+          </div>
+          <div class="contact__right">
+            <div class="social-media">
+              <img src="/src/assets/icons/discord.png" alt="discord" class="social-media__icon">
+              <img src="/src/assets/icons/instagram.png" alt="instagram" class="social-media__icon">
+              <img src="/src/assets/icons/message.png" alt="message" class="social-media__icon">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio__container">
+          <h2 class="section-title portfolio-title">My Projects</h2>
+          <div class="portfolio-layout">
+            <div class="portfolio-layout__left">
+              <div class="project-box">
+                <img src="/src/assets/images/project-left.png" alt="project-1" class="project-img">
+              </div>
+            </div>
+            <div class="portfolio-layout__right">
+              <div class="project-container">
+                <img src="/src/assets/images/project-top.png" alt="project-2" class="photo-image">
+                <div class="project-details">
+                  <p class="project-desc">I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+                  <button class="btn btn--light">
+                    <span>see more</span>
+                    <img class="btn__icon" src="/src/assets/icons/arrow_outward.svg" alt="arrow-outward">
+                  </button>
+                </div>
+              </div>
+              <div class="project-collection">
+                <div class="project-box">
+                  <img src="/src/assets/images/project-bottom-left.png" alt="project-3" class="project-img">
+                </div>
+                <div class="project-box">
+                  <img src="/src/assets/images/project-bottom-right.png" alt="project-4" class="project-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">all rights reserved @hexschool2023</div>
+    </footer>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
